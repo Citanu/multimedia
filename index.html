@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LensArt – Fotografie & Artă Vizuală</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav-header">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">Lens<span>Art</span></a>
+      <button class="burger" id="burger" aria-label="Meniu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#galerie">Galerie</a>
+        <a href="#tehnici">Tehnici</a>
+        <a href="#despre">Despre noi</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-img-wrap">
+      <img src="images/img1_before.jpg" alt="Fotografie urbană" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag">Fotografie &amp; Artă Vizuală</p>
+      <h1 class="hero-title">Lumea prin<br /><em>obiectiv</em></h1>
+      <p class="hero-sub">Un proiect multimedia care explorează frumusețea fotografiei urbane procesate artistic.</p>
+      <a href="#galerie" class="btn-primary">Vezi galeria</a>
+    </div>
+    <div class="scroll-hint">↓</div>
+  </section>
+
+  <!-- ===== INTRO ===== -->
+  <section class="intro">
+    <div class="container">
+      <div class="intro-inner">
+        <div class="intro-text-block">
+          <h2 class="section-title">Ce este LensArt?</h2>
+          <p class="intro-text">
+            LensArt este un proiect multimedia realizat în cadrul cursului de Multimedia
+            la Academia de Studii Economice din București. Fiecare imagine a fost procesată
+            manual în Photoshop folosind tehnici studiate la curs. Folosește sliderul
+            <strong>Before / After</strong> pentru a vedea transformarea fiecărei fotografii.
+          </p>
+        </div>
+        <div class="intro-stats">
+          <div class="stat"><span class="stat-num">6</span><span class="stat-label">Imagini originale</span></div>
+          <div class="stat"><span class="stat-num">2</span><span class="stat-label">Autori</span></div>
+          <div class="stat"><span class="stat-num">6</span><span class="stat-label">Tehnici utilizate</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIE ===== -->
+  <section class="galerie" id="galerie">
+    <div class="container">
+      <h2 class="section-title">Galerie fotografică</h2>
+      <p class="section-sub">Trage sliderul pentru a vedea înainte și după editare</p>
+
+      <div class="grid">
+
+        <!-- CARD 1 -->
+        <article class="card">
+          <div class="slider-wrap" data-before="images/img1_before.jpg" data-after="images/img1_after.jpg">
+            <div class="slider-before"><img src="images/img1_before.jpg" alt="Înainte" /></div>
+            <div class="slider-after"><img src="images/img1_after.jpg" alt="După" /></div>
+            <div class="slider-handle"><div class="slider-btn">⇔</div></div>
+            <div class="slider-label left">BEFORE</div>
+            <div class="slider-label right">AFTER</div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Ritmul orașului</h3>
+            <p class="card-tehnica"><strong>Tehnică:</strong> Curves – ton cinematic rece prin ajustarea canalelor Blue și Red</p>
+          </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="card">
+          <div class="slider-wrap">
+            <div class="slider-before"><img src="images/img2_before.jpg" alt="Înainte" /></div>
+            <div class="slider-after"><img src="images/img2_after.jpg" alt="După" /></div>
+            <div class="slider-handle"><div class="slider-btn">⇔</div></div>
+            <div class="slider-label left">BEFORE</div>
+            <div class="slider-label right">AFTER</div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Sub pământ</h3>
+            <p class="card-tehnica"><strong>Tehnică:</strong> Hue/Saturation – culori dramatice, saturație +70</p>
+          </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="card">
+          <div class="slider-wrap">
+            <div class="slider-before"><img src="images/img3_before.jpg" alt="Înainte" /></div>
+            <div class="slider-after"><img src="images/img3_after.jpg" alt="După" /></div>
+            <div class="slider-handle"><div class="slider-btn">⇔</div></div>
+            <div class="slider-label left">BEFORE</div>
+            <div class="slider-label right">AFTER</div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Deasupra orașului</h3>
+            <p class="card-tehnica"><strong>Tehnică:</strong> Smart Filters - Accented Edges</p>
+          </div>
+        </article>
+
+        <!-- CARD 4 -->
+        <article class="card">
+          <div class="slider-wrap">
+            <div class="slider-before"><img src="images/img4_before.jpg" alt="Înainte" /></div>
+            <div class="slider-after"><img src="images/img4_after.jpg" alt="După" /></div>
+            <div class="slider-handle"><div class="slider-btn">⇔</div></div>
+            <div class="slider-label left">BEFORE</div>
+            <div class="slider-label right">AFTER</div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Viteza luminii</h3>
+            <p class="card-tehnica"><strong>Tehnică:</strong> Liquify – deformarea luminilor pentru efect abstract</p>
+          </div>
+        </article>
+
+        <!-- CARD 5 -->
+        <article class="card">
+          <div class="slider-wrap">
+            <div class="slider-before"><img src="images/img5_before.jpg" alt="Înainte" /></div>
+            <div class="slider-after"><img src="images/img5_after.jpg" alt="După" /></div>
+            <div class="slider-handle"><div class="slider-btn">⇔</div></div>
+            <div class="slider-label left">BEFORE</div>
+            <div class="slider-label right">AFTER</div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Linii și forme</h3>
+            <p class="card-tehnica"><strong>Tehnică:</strong> Gradient Map – efect monocrom auriu</p>
+          </div>
+        </article>
+
+        <!-- CARD 6 -->
+        <article class="card">
+          <div class="slider-wrap">
+            <div class="slider-before"><img src="images/img6_before.jpg" alt="Înainte" /></div>
+            <div class="slider-after"><img src="images/img6_after.jpg" alt="După" /></div>
+            <div class="slider-handle"><div class="slider-btn">⇔</div></div>
+            <div class="slider-label left">BEFORE</div>
+            <div class="slider-label right">AFTER</div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Ceața orașului</h3>
+            <p class="card-tehnica"><strong>Tehnică:</strong> Selecție + Gaussian Blur – efect de adâncime, fundal blur radius 15</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEHNICI ===== -->
+  <section class="tehnici" id="tehnici">
+    <div class="container">
+      <h2 class="section-title light">Tehnici de prelucrare utilizate</h2>
+      <div class="tehnici-grid">
+        <div class="tehnica-item">
+          <div class="tehnica-icon">✦</div>
+          <h4>Curves</h4>
+          <p>Ajustarea individuală a canalelor de culoare RGB pentru tonuri cinematice reci sau calde.</p>
+        </div>
+        <div class="tehnica-item">
+          <div class="tehnica-icon">◈</div>
+          <h4>Hue / Saturation</h4>
+          <p>Modificarea nuanței și saturației pentru culori dramatice și atmosferă intensă.</p>
+        </div>
+        <div class="tehnica-item">
+          <div class="tehnica-icon">⬡</div>
+          <h4>Smart Filters - Accented Edges</h4>
+          <p>Aplicarea unui filtru de accentuare a marginilor pentru evidențierea contururilor și obținerea unui efect vizual mai clar și mai artistic.</p>
+        </div>
+        <div class="tehnica-item">
+          <div class="tehnica-icon">◉</div>
+          <h4>Liquify</h4>
+          <p>Deformarea elementelor din imagine cu Forward Warp pentru efecte abstracte.</p>
+        </div>
+        <div class="tehnica-item">
+          <div class="tehnica-icon">▣</div>
+          <h4>Gradient Map</h4>
+          <p>Înlocuirea tonurilor de gri cu un gradient personalizat negru-auriu pentru efect dramatic.</p>
+        </div>
+        <div class="tehnica-item">
+          <div class="tehnica-icon">❋</div>
+          <h4>Selecție + Gaussian Blur</h4>
+          <p>Izolarea subiectului și aplicarea blur-ului pe fundal pentru efect de adâncime (bokeh).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DESPRE NOI ===== -->
+  <section class="despre" id="despre">
+    <div class="container">
+      <h2 class="section-title">Despre noi</h2>
+      <p class="section-sub">Echipa din spatele proiectului LensArt</p>
+
+      <div class="studenti-grid">
+
+        <!-- STUDENT 1 -->
+        <div class="student-card">
+          <div class="student-avatar">S1</div>
+          <h3>Chițu Andrei</h3>
+          <table class="student-table">
+            <tr><td>Facultatea</td><td>Marketing, ASE București</td></tr>
+            <tr><td>Anul</td><td>2</td></tr>
+            <tr><td>Grupa</td><td>1723</td></tr>
+            <tr><td>Seria</td><td>A</td></tr>
+          </table>
+        </div>
+
+        <!-- STUDENT 2 -->
+        <div class="student-card">
+          <div class="student-avatar">S2</div>
+          <h3>Colta Mihail</h3>
+          <table class="student-table">
+            <tr><td>Facultatea</td><td>Marketing, ASE București</td></tr>
+            <tr><td>Anul</td><td>2</td></tr>
+            <tr><td>Grupa</td><td>1725</td></tr>
+            <tr><td>Seria</td><td>A</td></tr>
+          </table>
+        </div>
+
+      </div>
+
+      <div class="project-desc">
+        <h3>Descrierea proiectului</h3>
+        <p>
+          <strong>Titlu proiect:</strong> LensArt – Fotografie &amp; Artă Vizuală<br />
+          <strong>Tema:</strong> Fotografie urbană procesată digital<br /><br />
+          <strong>Echipă:</strong><br />
+          &nbsp;&nbsp;• Chițu Andrei – Facultatea de Marketing, ASE București, anul 2, grupa 1723, seria A<br />
+          &nbsp;&nbsp;• Colta Mihail – Facultatea de Marketing, ASE București, anul 2, grupa 1725, seria A<br /><br />
+          <strong>Contribuție:</strong> Fiecare student a realizat și procesat câte 3 imagini originale
+          folosind tehnici de prelucrare digitală prezentate la curs:
+          Curves, Hue/Saturation, Smart Filters - Accented Edges, Liquify, Gradient Map și Gaussian Blur.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">Lens<span>Art</span></p>
+      <p>Proiect Multimedia · Academia de Studii Economice · București</p>
+      <p class="footer-small">© 2025 LensArt. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
